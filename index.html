@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>NYC 2021 Mayoral Candidates</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Your styles should be called here -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+      <h1>Meet New York City's 2021 mayoral candidates</h1>
+      <p>Here are the candidates currently running for mayor of New York. Use the filters to narrow the list by party, professional background, whether the candidate is a native New Yorker, or any combination therein.</p>
+      <div class="flex filter">
+        <div>
+          <select id="party" class="filter">
+            <option value="item">Party</option>
+            <option value="republican">Republican</option>
+            <option value="democrat">Democrat</option>
+          </select>
+        </div>
+        <div>
+          <select id="background" class="filter">
+            <option value="item">Background</option>
+            <option value="finance">Finance</option>
+            <option value="business">Business</option>
+            <option value="government">Government</option>
+            <option value="nonprofit">Nonprofit</option>
+            <option value="education">Education</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="entertainment">Entertainment</option>
+          </select>
+        </div>
+        <div>
+          <select id="native" class="filter">
+            <option value="item">Native New Yorker?</option>
+            <option value="yes-native">Yes</option>
+            <option value="no-native">No</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="container photo">
+      <section class="flex">
+        <div class="item active democrat government yes-native">
+          <img src="images/Scott-Stringer.jpg" />
+          <h3>Scott Stringer</h3>
+        </div>
+
+        <div class="item active democrat government yes-native">
+          <img src="images/Eric-Adams.jpg" />
+          <h3>Eric Adams</h3>
+        </div>
+
+        <div class="item active democrat education yes-native">
+          <img src="images/Maya-Wiley.jpg" />
+          <h3>Maya Wiley</h3>
+        </div>
+
+        <div class="item active democrat education no-native">
+          <img src="images/Shaun-Donovan.jpg" />
+          <h3>Shaun Donovan</h3>
+        </div>
+
+        <div class="item active democrat government yes-native">
+          <img src="images/Kathryn-Garcia.jpg" />
+          <h3>Kathryn Garcia</h3>
+        </div>
+
+        <div class="item active democrat finance yes-native">
+          <img src="images/Ray-McGuire.jpg" />
+          <h3>Ray McGuire</h3>
+        </div>
+
+        <div class="item active democrat government yes-native">
+          <img src="images/Loree-Sutton.jpg" />
+          <h3>Loree Sutton</h3>
+        </div>
+
+        <div class="item active democrat government yes-native">
+          <img src="images/Carlos-Menchaca.jpg" />
+          <h3>Carlos Menchaca</h3>
+        </div>
+
+        <div class="item active democrat nonprofit yes-native">
+          <img src="images/Dianne-Morales.jpg" />
+          <h3>Dianne Morales</h3>
+        </div>
+
+        <div class="item active republican entertainment yes-native">
+          <img src="images/Curtis-Sliwa.jpg" />
+          <h3>Curtis Sliwa</h3>
+        </div>
+
+        <div class="item active democrat business yes-native">
+          <img src="images/Andrew-Yang.jpg" />
+          <h3>Andrew Yang</h3>
+        </div>
+
+        <div class="item active republican business entertainment yes-native">
+          <img src="images/Barbara-Kavovit.jpg" />
+          <h3>Barbara Kavovit</h3>
+        </div>
+
+        <div class="item active republican business no-native">
+          <img src="images/Fernando-Mateo.jpg" />
+          <h3>Fernando Mateo</h3>
+        </div>
+
+        <div class="item active republican finance no-native">
+          <img src="images/Sara-Tirschwell.jpg" />
+          <h3>Sara Tirschwell</h3>
+        </div>
+      </section>
+    </div>
+
+    <!-- Your javascript should be called here -->
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+
+</html>
