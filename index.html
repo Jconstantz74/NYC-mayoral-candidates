@@ -14,6 +14,8 @@
 
     <!-- Your styles should be called here -->
     <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,107 +28,182 @@
   <body>
     <!-- YOUR CONTENT GOES HERE -->
     <div class="container">
-      <h1>Meet New York City's 2021 mayoral candidates</h1>
-      <p>Here are the candidates currently running for mayor of New York. Use the filters to narrow the list by party, professional background, whether the candidate is a native New Yorker, or any combination therein.</p>
-      <div class="flex filter">
-        <div>
-          <select id="party" class="filter">
-            <option value="item">Party</option>
-            <option value="republican">Republican</option>
-            <option value="democrat">Democrat</option>
-          </select>
-        </div>
-        <div>
-          <select id="background" class="filter">
-            <option value="item">Background</option>
-            <option value="finance">Finance</option>
-            <option value="business">Business</option>
-            <option value="government">Government</option>
-            <option value="nonprofit">Nonprofit</option>
-            <option value="education">Education</option>
-            <option value="healthcare">Healthcare</option>
-            <option value="entertainment">Entertainment</option>
-          </select>
-        </div>
-        <div>
-          <select id="native" class="filter">
-            <option value="item">Native New Yorker?</option>
-            <option value="yes-native">Yes</option>
-            <option value="no-native">No</option>
-          </select>
+      <div class="top">
+        <h1>Meet New York City's 2021 mayoral candidates</h1>
+        <h4>By Jo Constantz | March 10, 2021</h4>
+        <p>Over two dozen candidates are vying for New York City's top spot, all looking to replace Mayor Bill de Blasio. With such a crowded field, it can be difficult to figure out who to support.</p>
+        <p>Here are the top contenders. You can filter by party, professional background, and whether they are a native New Yorker. To learn more about a candidate, click on their card to visit their campaign
+          website.</p>
+        <div class="flex filter">
+          <div>
+            <select id="party" class="filter">
+              <option value="item">Party</option>
+              <option value="republican">Republican</option>
+              <option value="democrat">Democrat</option>
+            </select>
+          </div>
+          <div>
+            <select id="background" class="filter">
+              <option value="item">Background</option>
+              <option value="finance">Finance</option>
+              <option value="business">Business</option>
+              <option value="government">Government</option>
+              <option value="nonprofit">Nonprofit</option>
+              <option value="entertainment">Entertainment</option>
+            </select>
+          </div>
+          <div>
+            <select id="native" class="filter">
+              <option value="item">Native New Yorker</option>
+              <option value="yes-native">Yes</option>
+              <option value="no-native">No</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
+
     <div class="container photo">
       <section class="flex">
         <div class="item active democrat government yes-native">
-          <img src="images/Scott-Stringer.jpg" />
-          <h3>Scott Stringer</h3>
+          <a href="https://stringerformayor.com/">
+            <img src="images/Scott-Stringer.jpg" />
+            <h3>Scott Stringer, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> New York City, N.Y.
+            </p>
+            <p>Scott Stringer held his first public office at age 16, serving on a community board in Manhattan. He's now the city's comptroller.</p>
         </div>
 
         <div class="item active democrat government yes-native">
-          <img src="images/Eric-Adams.jpg" />
-          <h3>Eric Adams</h3>
-        </div>
+          <a href="https://www.ericadams2021.com/">
+            <img src="images/Eric-Adams.jpg" />
+            <h3>Eric Adams, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> Brownsville, New York, N.Y.
+            </p>
+            <p>Eric Adams served as a New York City police officer for over two decades, and now serves as the Brooklyn Borough President.</p>
 
-        <div class="item active democrat education yes-native">
-          <img src="images/Maya-Wiley.jpg" />
-          <h3>Maya Wiley</h3>
-        </div>
-
-        <div class="item active democrat education no-native">
-          <img src="images/Shaun-Donovan.jpg" />
-          <h3>Shaun Donovan</h3>
         </div>
 
         <div class="item active democrat government yes-native">
-          <img src="images/Kathryn-Garcia.jpg" />
-          <h3>Kathryn Garcia</h3>
-        </div>
-
-        <div class="item active democrat finance yes-native">
-          <img src="images/Ray-McGuire.jpg" />
-          <h3>Ray McGuire</h3>
-        </div>
-
-        <div class="item active democrat government yes-native">
-          <img src="images/Loree-Sutton.jpg" />
-          <h3>Loree Sutton</h3>
+          <a href="https://mayawileyformayor.com/">
+            <img src="images/Maya-Wiley.jpg" />
+            <h3>Maya Wiley, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> Syracuse, N.Y.
+            </p>
+            <p>Maya Wiley, a former political commentator on MSNBC, has served as the chairwoman of the Civilian Complaint Review Board and as counsel to Mayor Bill de Blasio.</p>
         </div>
 
         <div class="item active democrat government yes-native">
-          <img src="images/Carlos-Menchaca.jpg" />
-          <h3>Carlos Menchaca</h3>
+          <a href="https://shaunfornyc.com/?utm_source=google&utm_medium=search&utm_campaign=tvad&gclid=Cj0KCQiA1pyCBhCtARIsAHaY_5eVya_vo2mRNVD11dNCZeKH3owJDV791p-sQTNH0MLwVektkDw4kTcaAm3BEALw_wcB">
+            <img src="images/Shaun-Donovan.jpg" />
+            <h3>Shaun Donovan, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> New York City, N.Y.
+            </p>
+            <p>Shaun Donovan is a former federal housing secretary under the Obama administration and a former White House budget director.</p>
+        </div>
+
+        <div class="item active democrat government yes-native">
+          <a href="https://www.kgfornyc.com/">
+            <img src="images/Kathryn-Garcia.jpg" />
+            <h3>Kathryn Garcia, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> Brooklyn, N.Y.
+            </p>
+            <p>Kathryn Garcia served as the sanitation commissioner for New York City.</p>
+        </div>
+
+        <div class="item active democrat finance no-native">
+          <a href="https://www.rayformayor.com/">
+            <img src="images/Ray-McGuire.jpg" />
+            <h3>Ray McGuire, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> Dayton, O.H.
+            </p>
+            <p>Raymond McGuire is a former vice-chair of Citigroup, an investment bank.</p>
+        </div>
+
+        <div class="item active democrat government no-native">
+          <a href="https://loreeformayor.nyc/">
+            <img src="images/Loree-Sutton.jpg" />
+            <h3>Loree Sutton, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> Loma Linda, C.A.
+            </p>
+            <p>Loree Sutton is a retired Army brigadier general and served as New York City Veterans’ Services commissioner.</p>
+        </div>
+
+        <div class="item active democrat government no-native">
+          <a href="https://www.carlos2021.com/">
+            <img src="images/Carlos-Menchaca.jpg" />
+            <h3>Carlos Menchaca, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> El Paso, T.X.
+            </p>
+            <p>Carlos Menchaca is a City Council member for district 38 in Brooklyn, serving Sunset Park and Red Hook.</p>
         </div>
 
         <div class="item active democrat nonprofit yes-native">
-          <img src="images/Dianne-Morales.jpg" />
-          <h3>Dianne Morales</h3>
+          <a href="https://www.dianne.nyc/">
+            <img src="images/Dianne-Morales.jpg" />
+            <h3>Dianne Morales, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> Brooklyn, N.Y.
+            </p>
+            <p>Dianne Morales served as the executive director of Phipps Neighborhoods, a social-services organization in the Bronx.</p>
         </div>
 
         <div class="item active republican entertainment yes-native">
-          <img src="images/Curtis-Sliwa.jpg" />
-          <h3>Curtis Sliwa</h3>
+          <a href="http://guardianangels.org/">
+            <img src="images/Curtis-Sliwa.jpg" />
+            <h3>Curtis Sliwa, <span style="color:#FF0000;">R</span></h3>
+            <p>
+              <b>Born:</b> Brooklyn, N.Y.
+            </p>
+            <p>Curtis Sliwa, a radio talkshow host, founded the Guardian Angels, a crime-prevention group, in 1979.</p>
         </div>
 
-        <div class="item active democrat business yes-native">
-          <img src="images/Andrew-Yang.jpg" />
-          <h3>Andrew Yang</h3>
+        <div class="item active democrat business nonprofit yes-native">
+          <a href="https://www.yangforny.com/">
+            <img src="images/Andrew-Yang.jpg" />
+            <h3>Andrew Yang, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> Schenectady, N.Y.
+            </p>
+            <p>Andrew Yang is an entreprenuer, nonprofit founder, and former presidential candidate.</p>
         </div>
 
         <div class="item active republican business entertainment yes-native">
-          <img src="images/Barbara-Kavovit.jpg" />
-          <h3>Barbara Kavovit</h3>
+          <a href="https://www.barbarakformayor.com/">
+            <img src="images/Barbara-Kavovit.jpg" />
+            <h3>Barbara Kavovit, <span style="color:#0015BC;">D</span></h3>
+            <p>
+              <b>Born:</b> Bronx, N.Y.
+            </p>
+            <p>Barbara Kavovit is a founder of a construction firm and a reality TV personality, known for her appearance on "The Real Housewives of New York City."</p>
         </div>
 
         <div class="item active republican business no-native">
-          <img src="images/Fernando-Mateo.jpg" />
-          <h3>Fernando Mateo</h3>
+          <a href="https://www.mateothemayor.com/">
+            <img src="images/Fernando-Mateo.jpg" />
+            <h3>Fernando Mateo, <span style="color:#FF0000;">R</span></h3>
+            <p>
+              <b>Born:</b> The Dominican Republic
+            </p>
+            <p>Fernando Mateo is a restaurant owner and has led trade groups for cabdrivers, delivery drivers, and bodega workers.</p>
         </div>
 
         <div class="item active republican finance no-native">
-          <img src="images/Sara-Tirschwell.jpg" />
-          <h3>Sara Tirschwell</h3>
+          <a href="https://www.saraformayor.com/">
+            <img src="images/Sara-Tirschwell.jpg" />
+            <h3>Sara Tirschwell, <span style="color:#FF0000;">R</span></h3>
+            <p>
+              <b>Born:</b> Corpus Christi, T.X.
+            </p>
+            <p>Sara Tirschwell is a former hedge fund manager, known for filing the first "Me Too" sexual harassment complaint on Wall Street.</p>
         </div>
       </section>
     </div>

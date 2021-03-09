@@ -17,17 +17,46 @@ html,
 body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 5px;
+    display: block;
+    margin: auto;
+}
+
+.top {
+    margin: 20px;
 }
 
 .container.photo {
     max-width: 1200px;
-    padding: 5px;
+    margin: 10px;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #0015BC;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: black;
+    text-decoration: none;
 }
 
 img {
@@ -46,7 +75,6 @@ select {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 16px;
 }
 
 .flex.filter div {
@@ -58,8 +86,10 @@ select {
     display: none;
 }
 
-.flex .item h3 {
-    padding: 0 5px;
+.item {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .flex .item.active {
@@ -69,7 +99,7 @@ select {
 /* Tablet/Desktop overrides */
 @media(min-width: 681px) {
     .flex .item {
-        flex-basis: 24%;
+        flex-basis: 30%;
     }
 
     .flex.filter div {
