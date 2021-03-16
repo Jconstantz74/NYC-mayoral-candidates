@@ -23,7 +23,7 @@ body {
 .container {
     max-width: 800px;
     display: block;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .top {
@@ -32,7 +32,7 @@ body {
 
 .container.photo {
     max-width: 1200px;
-    margin: 10px;
+    margin: 10px auto;
 }
 
 /* unvisited link */
@@ -82,7 +82,7 @@ select {
 }
 
 .flex .item {
-    flex-basis: 48%;
+    flex-basis: 100%;
     display: none;
 }
 
