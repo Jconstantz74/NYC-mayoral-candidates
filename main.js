@@ -29,8 +29,8 @@ function filter_candidates() {
 	 * Capture the value of each dropdown
 	 */
 	const party_class = document.querySelector("#party").value;
-	const background_class = document.querySelector("#background").value;
-	const native_class = document.querySelector("#native").value;
+	const background_class = document.querySelector("#issue").value;
+	const native_class = document.querySelector("#cityborn").value;
 
 	/**
 	 * Remove .active from each active item
